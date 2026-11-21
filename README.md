@@ -64,3 +64,9 @@ Never upload your API keys or `.env` file to GitHub.
 ## Project Status
 
 Currently under development. More features will be added, including structured JSON generation, model comparison, token tracking, latency monitoring, and error handling.
+
+# LLM Application Playground
+
+🚀 **Live Demo:** https://llm-application-playground.streamlit.app/
+
+An interactive LLM playground built using Python, Streamlit, and Groq API.
