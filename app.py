@@ -8,6 +8,13 @@ import streamlit as st
 load_dotenv()
 
 api_key=os.getenv("Groq_API_KEY")
+
+if not api_key:
+    try:
+        api_key = st.secrets["Groq_API_KEY"]
+    except (KeyError, FileNotFoundError):
+        api_key = None
+
 if not api_key:
     st.error("API key not found. check .env file")
     st.stop()
